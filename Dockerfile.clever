@@ -1,0 +1,5 @@
+FROM node:21-bullseye-slim
+
+RUN apt-get update -y && apt-get -y install g++ && rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
+COPY . .
+RUN mkdir /build && ( date > /build/date.txt ) && apt-get -y remove --purge g++

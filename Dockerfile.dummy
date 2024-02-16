@@ -1,0 +1,5 @@
+FROM node:21-bullseye-slim
+
+RUN apt-get update -y && apt-get -y install g++
+COPY . .
+RUN mkdir /build && date > /build/date.txt

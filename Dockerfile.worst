@@ -1,0 +1,35 @@
+FROM node:21-bullseye-slim
+
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get update -y
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+RUN apt-get -y install g++
+COPY . .
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN mkdir -p /build
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
+RUN date > /build/date.txt
